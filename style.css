@@ -192,17 +192,27 @@ a:focus {
 /* HEADER & NAVIGATION */
 
 .primary-header {
-  background-color: var(--clr-primary-300);
   min-height: 50vh;
   padding: 2rem;
   border-radius: var(--borderRad);
+  background-image: url(img/hero.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50vh;
 }
 
-.primary-header--bg {
-    background-image: url(img/hero.jpg);
-    background-size: cover;
-    background-position: center;
+.primary-header .wrapper {
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
+
+/*.page-home .primary-header {
+    background-image: url(img/hero.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+} */
 
 .primary-nav {
     position: fixed;
