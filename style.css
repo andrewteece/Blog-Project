@@ -154,7 +154,7 @@ a:focus {
     margin: 0 auto;
 }
 
-.flow-content {
+.flow-content > * + * {
     margin-top: var(--flow-spacer, 1em);
 }
 
@@ -281,7 +281,13 @@ a:focus {
 /* GENERAL LAYOUT */
 
 section {
-    padding: 3.5rem 0;
+    padding: 2.5rem 0;
+}
+
+@media (min-width: 40em) {
+    section {
+        padding: 3.5rem;
+    }
 }
 
 /* ARTICLES */
