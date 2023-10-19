@@ -83,7 +83,7 @@ select {
 
 img {
     max-width: 100%;
-    height: 100%;
+    /* height: 100%; */
     display: block;
     border-radius: var(--borderRad);
 }
@@ -363,7 +363,7 @@ section {
 }
 
 .cta button {
-    align-self: center;
+    align-self: flex-start;
 }
 
 @media (min-width: 40em) {
@@ -383,7 +383,7 @@ footer {
 }
 
 .primary-footer__inner {
-    --border: 2px solid var(--clr-neutral-200);
+    --border: 3px solid var(--clr-neutral-200);
     border-top: var(--border);
     border-bottom: var(--border);
     padding: 3em 0;
@@ -396,6 +396,18 @@ footer {
 
 .footer-nav > *:first-child {
     margin-right: 4em;
+}
+
+.footer-nav a {
+    font-weight: var(--fw-700);
+    font-size: var(--fs-300);
+    color: var(--clr-neutral-800);
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus {
+    color: var(--clr-primary-400);
+    text-decoration: none;
 }
 
 .footer-social {
