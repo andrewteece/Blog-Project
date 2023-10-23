@@ -132,14 +132,21 @@ a:focus {
     font-size: var(--fs-600);
 }
 
+.article-full h3,
 .section-title {
     font-size: var(--fs-600);
     color: var(--clr-neutral-400);
     
 }
 
+.article-full h3 + p,
 .section-subtitle {
     font-size: var(--fs-600);
+}
+
+.article-full h3 + p {
+    font-family: var(--ff-serif);
+    margin-top: 0;
 }
 
 /* UTILITY CLASSES */
@@ -149,6 +156,11 @@ a:focus {
     border-radius: var(--borderRad);
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.wrapper-hero {
+    max-width: 77.5rem;
+    margin: 0 auto;
 }
 
 .wrapper {
