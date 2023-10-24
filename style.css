@@ -314,6 +314,12 @@ a:focus {
     margin: 2rem 0;
 }
 
+@media (max-width: 39em) {
+    .secondary-nav {
+        visibility: hidden;
+    }
+}
+
 .secondary-nav > a:last-child {
     margin-left: auto;
 }
@@ -392,15 +398,6 @@ section {
  .article-preview .info > *:first-child {
     margin-right: 2rem;
 } 
-
-/*.article-preview:hover,
-.article-preview:focus {
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    padding: .5rem;
-    border-radius: var(--borderRad);
-    transition: all 350ms ease-in-out;
-} */
 
 .article-preview {
     position: relative;
